@@ -70,7 +70,17 @@ module.exports = {
     // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),
     // network_id: 2111,   // This network is yours, in the cloud.
     // production: true    // Treats this network as if it was a public net. (default: false)
-    // }
+    // },
+    extdev: {
+      provider: function () {
+        const privateKey = fs.readFileSync(path.join(__dirname, 'caller_private_key'), 'utf-8')
+        const chainId = 'extdev-plasma-us1'
+        const writeUrl = 'wss://extdev-plasma-us1.dappchains.com/websocket'
+        const readUrl = 'wss://extdev-plasma-us1.dappchains.com/queryws'
+        return new LoomTruffleProvider(chainId, writeUrl, readUrl, privateKey)
+      },
+      network_id: '9545242630824'
+    }
   },
 
   // Set default mocha options here, use special reporters etc.
