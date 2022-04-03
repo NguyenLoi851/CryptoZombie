@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.9;
 
-import "openzeppelin-solidity/contracts/access/AccessControl.sol";
-import "openzeppelin-solidity/contracts/utils/math/SafeMath.sol";
+import "../../node_modules/openzeppelin-solidity/contracts/access/AccessControl.sol";
+import "../../node_modules/openzeppelin-solidity/contracts/utils/math/SafeMath.sol";
 import "./CallerContractInterface.sol";
 
 contract EthPriceOracle is AccessControl{
