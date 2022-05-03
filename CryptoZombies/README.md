@@ -16,8 +16,13 @@ Steps to do:
 ***Deploy to dev network of truffle***
 
 9.1. truffle develop
+
 (10 accounts, 10 addresses, mnemonic will be supplied automatically)
+
 10.1. compile
+
 11.1. test
+
 12.1. migrate (or deploy)
+
 13.1. ".exit" to end truffle(develop)
