@@ -14,6 +14,7 @@ Steps to do:
 9. truffle migrate --network ropsten (truffle deploy = truffle migrate)
 
 ***Deploy to dev network of truffle***
+
 9.1. truffle develop
 (10 accounts, 10 addresses, mnemonic will be supplied automatically)
 10.1. compile
