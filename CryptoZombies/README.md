@@ -1,4 +1,4 @@
-This project demo how to compile and deploy smart contracts to blockchain (Ropsten testnet) by Truffle
+This project demo how to compile and deploy smart contracts to blockchain (Ropsten testnet) by Truffle, Infura, Mocha, Chai
 
 Steps to do:
 1. npm install -g truffle
